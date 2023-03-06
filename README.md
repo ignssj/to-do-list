@@ -1,0 +1,1 @@
+This repository contains a to-do list application designed to help users manage their daily tasks and improve productivity. The backend is built using NodeJS and Express, with MySQL as the database, whereas the frontend is built using HTML/CSS. Essentially, The API have been designed to handle CRUD operations.
