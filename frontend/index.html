@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Dialy ToDo List</title>
+</head>
+
+<body>
+  <main>
+    <form class="add-form">
+      <input type="text" , placeholder="Add task" , class="input-form">
+      <button type="button" , class="add-btn">+</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Created</th>
+          <th>Status</th>
+          <th>Options</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr>
+          <td>Wash the dishes</td>
+          <td>10th Mar, 12:45:00</td>
+          <td><select>
+            <option value="To do">To do</option>
+            <option value="Doing">Doing</option>
+            <option value="Done">Done</option>
+          </select></td>
+          <td>
+            <button class="btn">
+              <span class="material-symbols-outlined">
+                delete
+                </span>
+            </button>
+            <button class="btn">
+              <span class="material-symbols-outlined">
+                edit_note
+                </span>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
