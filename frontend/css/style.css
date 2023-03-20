@@ -36,6 +36,9 @@
   box-shadow: 1px;
   border: 5px;
   border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  font-size: medium;
  }
 
  input{
