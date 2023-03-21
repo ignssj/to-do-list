@@ -88,6 +88,24 @@ const createRow = (task) => {
   const select = createSelect(status);
   const editButton = createElement('button', '', '<span class="material-symbols-outlined">edit_note</span>');
   const deleteButton = createElement('button', '', '<span class="material-symbols-outlined">delete</span>');
+
+  editForm = createElement('form');
+  editInput = createElement('input');
+  editInput.value = title;
+  editForm.appendChild(editInput);
+
+  editForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    await updateTask({id,title: editInput.value,status});
+    loadTasks();
+  });
+
+  editButton.addEventListener('click', () => {
+    tdTitle.innerText = '';
+    tdTitle.appendChild(editForm);
+  });
+
+
   editButton.classList.add('btn');
   deleteButton.classList.add('btn');
 
