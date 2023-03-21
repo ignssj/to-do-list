@@ -1,0 +1,111 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+ }
+
+ body{
+  background-color: darkslategrey;
+ }
+
+ main{
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px;
+  width: 90%;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  justify-content: center;
+  align-items: center;
+ }
+
+ .add-form{
+  display: flex;
+  margin-bottom: 50px;
+  gap: 15px;
+  width: 100%;
+ }
+
+ .add-btn{
+  width: 50px;
+  height: 50px;
+  background-color :darkslategrey;
+  box-shadow: 1px;
+  border: 5px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  font-size: medium;
+ }
+
+ input{
+  width: 100%;
+  flex: 1;
+  padding: 15px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  cursor: pointer;
+ }
+
+table{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+ td, th{
+  border: 1px solid black;
+  padding: 10px 15px;
+  font-weight: 600;
+ }
+
+ tr:nth-child(even){
+  background-color: #F5F5F5;
+ }
+
+ .btn{
+  color: #FFF;
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor:pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:nth-child(1){
+  background-color: red;
+  margin-right: 5px;
+}
+
+.btn:nth-child(2){
+  background-color: orange;
+}
+
+.btn:hover{
+  background-color: #DDD;
+}
+
+select{
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  background-color: #ededed; 
+}
+
+select:hover{
+ background-color: #DDD; 
+}
+

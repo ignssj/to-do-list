@@ -14,13 +14,13 @@ const validateTitle = (request, response, next) => {
 };
 
 const validateStatus = (request, response, next) => {
-    const { body } = request;
+    // const { body } = request;
 
-    if (body.status != 0 && body.status != 1) {
-        return response.status(400).json({ message: "O status deve ser 0 ou 1." });
+    // if (body.status != 0 && body.status != 1) {
+    //     return response.status(400).json({ message: "O status deve ser 0 ou 1." });
 
-    }
-    next();
+    // }
+    // next();
 };
 
 
